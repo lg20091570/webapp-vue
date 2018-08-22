@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <meta name="x5-orientation" content="portait">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="screen-orientation" content="portait">
+  <meta name="full-screen" content="yes">
+  <meta name="format-detection" content="telphone=no,email=no">
+  <script src="./static/js/m.touch.js"></script>
+  <title>超惠投</title>
+</head>
+<body>
+<div id="app">
+  <router-view></router-view>
+</div>
+
+<script type="text/javascript">
+  window.offline = function() {
+    document.querySelector('#offline').style.display='flex'
+  };
+  window.ononline = function() {
+    document.querySelector('#offline').style.display='none'
+  }
+</script>
+
+<div id="offline" class="offline">
+  <span>当前网络已断开</span>
+  <span>请打开网络</span>
+</div>
+
+<style>
+  .offline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255,255,255,0.95);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.3rem;
+    color:#666;
+    display: none;
+    z-index: 334;
+    line-height: 0.5rem;
+  }
+</style>
+</body>
+</html>

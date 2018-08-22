@@ -1,0 +1,15 @@
+ol,ul { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 100%; }
+*{ margin: 0; padding: 0; }
+body{ position: relative; font-size: 0.28rem; color: #666; overflow: auto; -webkit-overflow-scrolling: touch; background: #EFEFF4;}
+html, body { height: 100%; width: 100%; overflow-x: hidden; }
+body::-webkit-scrollbar{ display: none; width: 0; opacity: 0; }
+/* 去除input[type="number"]的小箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{ -webkit-appearance: none !important; margin: 0; }
+input[type="number"]{-moz-appearance:textfield;}
+
+input,textarea{ -webkit-appearance: none; outline: none; border: 1px solid #e8e8e8; font: 0.28rem "Microsoft YaHei"; resize: none; }
+a{ text-decoration: none; color: #666; }
+
+.container{height: 100vh;width: 100vw;position: relative;}
